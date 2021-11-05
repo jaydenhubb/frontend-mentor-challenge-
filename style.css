@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    position: relative;
+} 
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.body{
+    padding: 5%;
+    text-align: center;
+}
+.header{
+    margin-bottom: 20px;
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    
+} 
+.para{
+    color: rgb(138, 132, 132);
+    margin-bottom: 20px;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.plan{
+    display: flex;
+    align-items: center;
+}
+.plan div {
+    margin-left: 30px;
+}
+h5{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: inherit;
+}
+.change{
+    font-weight: 900px;
+    color: darkblue;
+    transition: all .5s ease-out;
+}
+.change:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+.proceed{
+    background-color:hsl(245, 75%, 52%);
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding:10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 18px 0;
+    margin: 25px 0;
+    transition: background-color .3s ease-out;
+}
+.proceed:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel{
+    font-weight: 700;
+    text-decoration: none; 
+    color: hsl(224, 23%, 55%)
+    transition color .3s ease-out
+}
+.cancel:hover{
+    color: hsl(224, 23%, 55%);
+}
+@media only screen and (max-width:425px){
+    .wrapper{
+        max-width: 80%;
+    }
+    
+}
